@@ -1,89 +1,114 @@
 h1 {
-    font-style: italic;
-  }
+  font-style: italic;
+}
 
-  #secciondatos {
-    width: 50%;
-    margin: 0 auto;
-  }
+#secciondatos {
+  width: 50%;
+  margin: 0 auto;
+}
 
-  h2{
-    font-family: 'Open Sans', sans-serif;
-  }
-  p{
-    text-align: center;
-  }
-  span{
-    text-align: center;
-  }
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
 
-  #seccionredes{
-    width:30%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  a{
-    font:600;
-    text-decoration: none;
-  }
+p {
+  text-align: center;
+}
 
-  nav ul{
-    list-style-type:none;
-    display: flex;
-    justify-content: space-around;
-  }
+span {
+  text-align: center;
+}
+
+#seccionredes {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  font: 600;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
 .seccion {
-    width: 50%;
-    margin: 0 auto; 
-    background-color: white;
-    padding: 2%;
-    margin-top: 2% !important;
-    margin-bottom: 2% !important;
-    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2%;
+  margin-top: 2% !important;
+  margin-bottom: 2% !important;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 
 #seccionhabilidades table td {
-    text-align: center;
+  text-align: center;
 }
 
 #seccionhabilidades table {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /*Para el selector compuesto section h2 aplique la propiedad color, cuyo valor sea #0BCC7B*/
-section h2{
+section h2 {
   color: #0BCC7B;
 }
 
-#secciondatos p{
+#secciondatos p {
   font-size: 1.4rem;
   margin-top: 6%;
   color: #373B41;
 }
 
 
-#seccioncontactenos{
+#seccioncontactenos {
   display: grid;
-  grid-template-areas:   " area1 area1 area1 area1"
-                         " area2 area2 area3 area3"
-                         " area4 area4 area5 area5 ";
+  grid-template-areas: " area1 area1 area1 area1"
+    " area2 area2 area3 area3"
+    " area4 area4 area5 area5 ";
 }
+
 #titleContactenos {
-    grid-area: area1;
+  grid-area: area1;
 }
 
 #datos {
-    grid-area: area2;
+  grid-area: area2;
 }
 
 #ubicacionContactenos {
-    grid-area: area3;
+  grid-area: area3;
 }
 
-#formContactenos{
-    grid-area: area4;
+#formContactenos {
+  grid-area: area4;
 }
 
-#mapaContactenos{
-    grid-area: area5;
+#mapaContactenos {
+  grid-area: area5;
+}
+
+
+
+#address {
+  display: flex;
+  flex-direction: column;
+}
+
+#form,
+#datosForm,
+#rangoEdadForm #servicioForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#form{
+  gap: 10px 10px
 }
