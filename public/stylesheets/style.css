@@ -61,3 +61,29 @@ section h2{
   color: #373B41;
 }
 
+
+#seccioncontactenos{
+  display: grid;
+  grid-template-areas:   " area1 area1 area1 area1"
+                         " area2 area2 area3 area3"
+                         " area4 area4 area5 area5 ";
+}
+#titleContactenos {
+    grid-area: area1;
+}
+
+#datos {
+    grid-area: area2;
+}
+
+#ubicacionContactenos {
+    grid-area: area3;
+}
+
+#formContactenos{
+    grid-area: area4;
+}
+
+#mapaContactenos{
+    grid-area: area5;
+}
