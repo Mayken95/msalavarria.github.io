@@ -12,8 +12,9 @@ body {
 }
 
 #descriptionzone{
-    display: flex;
-    gap: 20px 20px;
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 85% 15%;
 }
 
 #description{
