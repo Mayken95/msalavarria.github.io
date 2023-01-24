@@ -1,0 +1,39 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#descriptionzone{
+    display: flex;
+    gap: 20px 20px;
+}
+
+#description{
+    padding-left: 20%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 60%;
+
+}
+
+#description img{
+    align-items: stretch;
+}
+
+#parttwo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#parttwo .box-images{
+    border-left: 2px solid orangered;
+}

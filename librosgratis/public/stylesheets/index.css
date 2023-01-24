@@ -1,0 +1,89 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#header{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    
+    grid-template-areas: "areah1 areah1 areah1 areah1"
+                         "areah2 areah2 areah3 areah3";
+}
+#header h1{
+    grid-area:areah1;
+    padding-top: 12%;
+}
+#header #header-cont{
+    grid-area:areah2;
+}
+#header-cont{
+ display: grid;
+ grid-template-rows: auto;
+ grid-template-columns: 60% 40%;
+}
+#imagesheader{
+    display: grid;
+    grid-template-areas: "areaimgh1 areaimgh2 areaimgh3 areaimgh4";
+    gap: 1px 1px;
+}
+#imgh1{
+    grid-area: areaimgh1;
+}
+#imgh2{
+    grid-area: areaimgh2;
+}
+#imgh3{
+    grid-area: areaimgh3;
+}
+#imgh4{
+    grid-area: areaimgh4;
+}
+#bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+  }
+
+  #contenido{
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+  }
+  #images_develop{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+
+    }
+  .imageheader {
+    margin: 0 auto;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+  }
+ 
+
+  #contenido h1{
+    margin-left: 5%;
+  }
