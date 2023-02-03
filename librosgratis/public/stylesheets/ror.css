@@ -10,7 +10,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.space-left, #descriptionzone{
+    padding-left: 10rem;
+}
 #descriptionzone{
     display: grid;
     grid-template-rows: 20% auto;
@@ -18,10 +20,9 @@ body {
 }
 
 #description{
-    padding-left: 20%;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 20% 60%;
+    grid-template-columns: 30% 60% 10%;
 
 }
 
@@ -32,9 +33,21 @@ body {
 #parttwo{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 
 }
 
 #parttwo .box-images{
-    border-left: 2px solid orangered;
+    border-left: 4px solid orangered;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#descriptpartone{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.image-menu{
+    height: 10rem;
+    width: 8rem;
 }
