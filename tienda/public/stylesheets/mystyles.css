@@ -1,0 +1,155 @@
+
+@media (min-width: 768px){
+    .main-bar {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+.main-bar-options{
+    color: black!important;
+    font-size: 1.15rem;
+}
+.bg-main{
+    background-color: #ebebeb;
+}
+
+.nav-link:hover , .activated{
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+.nav-link.main-bar-options:hover,
+.nav-link.main-bar-options.show{
+    color:purple!important;
+}
+
+.activated{
+    color:rgb(4, 33, 139)!important;
+}
+.color-text-carousel{
+    color:black;
+}
+.color-text2-carousel{
+    color:white;
+}
+.imagen-item:hover{
+    --escala: 1.4;
+    cursor:pointer;
+  }
+.imagen-item{
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+  }
+
+  .nosotros-title{
+    padding-top: 2.6rem;
+  }
+
+  
+.nav-link.main-bar-options.show{
+    font-weight: bold;
+}
+
+.form-box {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.contact-slipt , .title-creaciones{
+    margin-top: 10rem!important;
+    margin-bottom: 5rem;
+}
+.footer{
+	background-color:purple;
+	padding-right:0;
+    padding-left:0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0px;
+	margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+.pos-top{
+    margin-top: 5rem;
+}
+.form-boxes{
+    width: 100%;
+}
+
+.box-form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 15rem;
+    width: 400px;
+    padding: 32px 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    box-sizing: border-box;
+    color: rgb(94, 108, 132);
+}
+#login-username, #login-pass{
+   
+    margin-top: 40px;
+    width: auto;
+ 
+}
+
+.user-login{
+    font-size:60px;
+    color: gray;
+}
+
+
+.lista-productos{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 2rem; /**separacion entre elementos**/
+    align-items: center;
+}
+@media (min-width: 768px){
+	.lista-productos{
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+
+.producto{
+	background-color: rgb(212, 169, 212);
+	padding: 1rem;
+    padding-top: 2rem;
+    text-align: center!important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+
+}
+.producto img{
+    width: 25rem;
+    height: 20rem;
+}
+
+.contenido-producto .precio{
+	font-size: 2rem;
+	color: black;
+}
+.contenedor{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.arrow-up{
+    font-size: 2.5rem;
+}
+
+.boton-comprar {
+    background-color: #ceccc3;
+    padding: 10px 40px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #470c69;
+    transition: purple .3s ease-in-out;
+    border-radius: 5px;
+}
