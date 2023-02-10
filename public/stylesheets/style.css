@@ -94,6 +94,13 @@ section h2 {
 }
 
 
+#address {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
 
 #address {
   display: flex;
