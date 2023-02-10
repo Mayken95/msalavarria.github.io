@@ -107,7 +107,7 @@
 
 .lista-productos{
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(1,1fr);
 	grid-gap: 2rem; /**separacion entre elementos**/
     align-items: center;
 }
@@ -126,8 +126,8 @@
 
 }
 .producto img{
-    width: 25rem;
-    height: 20rem;
+    width: 90%;
+    height: 90%;
 }
 
 .contenido-producto .precio{
