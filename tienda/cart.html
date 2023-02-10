@@ -108,7 +108,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link main-bar-options" href="cart.html"><i
-                                    class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                                class="fa-sharp fa-solid fa-cart-shopping"></i></a>
                         </li>
 
                     </ul>
@@ -118,64 +118,90 @@
         </nav>
     </header>
 
-    <main class="contenedor">
-        <div class="title-creaciones">
-            <h1>Pulseras</h1>
-        </div>
-        <h2>Nuestros Productos</h2>
-        <div class="lista-productos">
-            <div class="producto">
-                <img src="public/images/bracelets/1.png" alt="producto">
-                <div class="contenido-producto">
-                    <p class="precio">$15</p>
-                    <a href="#" class="boton-comprar">Comprar</a>
-                </div>
+    <main id="main-cart">
+
+
+
+
+        <div class="container  marketing">
+
+
+            <!-- START THE FEATURETTES -->
+            <div class="subtitle-split">
+                <h1>Carrito</h1>
+            </div>
+
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col" class="text-end">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <div class="box-cart-desc">
+                                    <img width="20%" height="20%" src="public/images/bracelets/3.png" alt="Pulsera">
+                                    <div class="text-desc">
+                                        <h2>Double Elegant Bracelets</h2>
+                                        <p>Dorada bañada en oro</p>
+                                        <p class="item-avaliable">5 Disponible(s)</p>
+                                        <div> <button type="button" class="btn btn-delete" data-bs-toggle="modal"
+                                                data-bs-target="#modalDelete">
+                                                <i class="fa-sharp fa-solid fa-xmark icon-delete"></i><span
+                                                    class="delete">Eliminar</span>
+                                            </button></SPAN></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-price text-end">US$27,00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-subtotal text-end">Impuesto 12%</th>
+                            <td class="text-subtotal text-end">$3,24</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-subtotal text-end">Subtotal</th>
+                            <td class="text-subtotal text-end">$27,00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-subtotal text-end">Total</th>
+                            <td class="text-subtotal text-end">$30,24</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
 
-            <div class="producto">
-                <img src="public/images/bracelets/2.png" alt="producto">
-                <div class="contenido-producto">
-                    <p class="precio">$35</p>
-                    <a href="#" class="boton-comprar">Comprar</a>
-                </div>
-            </div>
+
+        </div><!-- /.container -->
 
 
 
-            <div class="producto">
-                <img src="public/images/bracelets/3.png" alt="producto">
-                <div class="contenido-producto">
-                    <p class="precio">$27</p>
-                    <a href="#" class="boton-comprar">Comprar</a>
-                </div>
-            </div>
-
-
-
-            <div class="producto">
-                <img src="public/images/bracelets/4.png" alt="producto">
-                <div class="contenido-producto">
-                    <p class="precio">$45</p>
-                    <a href="#" class="boton-comprar">Comprar</a>
-                </div>
-            </div>
-
-
-
-            <div class="producto">
-                <img src="public/images/bracelets/5.png" alt="producto">
-                <div class="contenido-producto">
-                    <p class="precio">$25</p>
-                    <a href="#" class="boton-comprar">Comprar</a>
-                </div>
-            </div>
-
-
-        </div>
     </main>
-
-    <footer class="footer">
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de eliminar este elemento?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-delete text-confirm-del"
+                        data-bs-dismiss="modal">Acepto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom">
         <p class="float-end"><a href="#" class="go-up">Volver arriba</a></p>
         <p class="copyright">
             Minky Store - Todos los Derechos Reservados 2023.
